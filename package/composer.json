@@ -1,0 +1,24 @@
+{
+    "name": "fake/package",
+    "require": {
+        "php": "^8 || ^7.4",
+        "fake/dependency": "dev-main"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Fake\\Package\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../dependency"
+        }
+    ]
+}

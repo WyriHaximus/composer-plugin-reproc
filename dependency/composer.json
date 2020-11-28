@@ -1,0 +1,23 @@
+{
+    "name": "fake/dependency",
+    "type": "composer-plugin",
+    "require": {
+        "php": "^8 || ^7.4",
+        "composer-plugin-api": "^2",
+        "composer-runtime-api": "^2.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "class": "Fake\\Dependency\\Composer\\Installer"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fake\\Dependency\\": "src/"
+        }
+    }
+}

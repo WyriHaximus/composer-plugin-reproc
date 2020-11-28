@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a8440b03a640e9a6eab34acb90ffc0bc",
+    "packages": [
+        {
+            "name": "fake/dependency",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../dependency",
+                "reference": "3710da0b4d327d93dc4a238f12ca4bac3bc9b3e9"
+            },
+            "require": {
+                "composer-plugin-api": "^2",
+                "composer-runtime-api": "^2.0",
+                "php": "^8 || ^7.4"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Fake\\Dependency\\Composer\\Installer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fake\\Dependency\\": "src/"
+                }
+            },
+            "transport-options": {
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "fake/dependency": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8 || ^7.4"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.4.7"
+    },
+    "plugin-api-version": "2.0.0"
+}
